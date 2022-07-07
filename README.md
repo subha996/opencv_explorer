@@ -25,10 +25,10 @@ I have tried to include almost every parameter that can be changed and apply to 
 
 
 ### Some Screenshots 
-![Screenshot](screensicon\scr1.jpg)
-![Screenshot](screensicon\scr2.png)
-![Screenshot](screensicon\scr3.png)
-![Screenshot](screensicon\scr4.png)
+<div style="text-align:center"><img src="screensicon\scr1.jpg" /></div>
+<div style="text-align:center"><img src="screensicon\scr2.png" /></div>
+<div style="text-align:center"><img src="screensicon\scr3.png" /></div>
+<div style="text-align:center"><img src="screensicon\scr4.png" /></div> 
 
 <h4 align="center"> Tech Used </h4>
 I have used `python` as the base programming language and `Open-CV python library` for the image transformation, `streamlit` for creating the web application.
