@@ -11,6 +11,9 @@ from mypages.morph_trans_img import run_morph_trans_img
 from mypages.smoothing_img import run_smoothing_img
 from mypages.draw_text import run_draw_text
 
+# setting the page icon
+st.set_page_config(page_title='Open-CV Explorer',page_icon="screensicon\opencv-icon.png" ,layout = 'centered', initial_sidebar_state = 'auto')
+
 # reading the image from user input.
 # st.markdown('<div style="text-align: center; color: red;">Dilation</div>', unsafe_allow_html=True)
 buffer = st.sidebar.file_uploader("Please Upload File", type=["jpg", "png"])
