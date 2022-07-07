@@ -51,7 +51,7 @@ nbformat==5.4.0
 nest-asyncio==1.5.5
 netifaces==0.11.0
 numpy==1.23.0
-opencv-python==4.6.0.66
+# opencv-python==4.6.0.66 
 opencv-python-headless==4.6.0.66
 packaging==21.3
 pandas==1.4.3
