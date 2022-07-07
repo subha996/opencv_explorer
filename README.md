@@ -6,6 +6,13 @@
 
 Opencv is a versatile open-source library for image and video processing, For computer vision engineers it is a day-to-day job to use this library. Open-CV comes with lots of methods for image editing and its transformation. If you are new to image processing and learning open-cv, then this application can come in handy with your learning journey, here you can explore some important methods with an instant demo without writing the code on your editor. This application allows you to upload your image and test some open-cv methods on the image, how different parameters will change the effect and what will be the effect by changing those parameters. Just think you don't need to run the code every time when you change the parameter to see the effect. it will be reflected automatically on the image when you change the parameter through UI. Although open-cv has lots of methods for image processing and transformations, I have included some common methods to run. It will help beginners to quickly grasp the idea of changing parameters and will help to learn open-cv with more fun and quickly
 
+### How can help it
+* Explore most commonly used code and its use at one place.
+* Quickly grasp concepts of query parameter change.
+* Observe the effect without running the code in IDE.
+* Make learning more fun and exploratory.
+
+
 <h4 align="center"> Use of Application is really simple </h4>
 <div style="text-align:center"><img src="screensicon\opencvflow.png" /></div>
 
@@ -34,5 +41,8 @@ I have tried to include almost every parameter that can be changed and apply to 
 I have used `python` as the base programming language and `Open-CV python library` for the image transformation, `streamlit` for creating the web application.
 
 [Demo Video](https://youtu.be/6Oxofczo3tA)
+[Web Link 1](http://opencvexplorer.herokuapp.com/)
+[Web Link 2](https://subha996-opencv-explorer-app-d2vtt3.streamlitapp.com/)
+
 
 [Subhabrata Nath](https://www.linkedin.com/in/subhabrata-nath-181375115/)
