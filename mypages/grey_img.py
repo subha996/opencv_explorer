@@ -19,7 +19,7 @@ def run_grey_img(img):
     # else:
     #     img = img
 
-    st.markdown('<h2 style="text-align: center; color: red;">Grey Image</h2>', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align: center; color: red;">Grey Image</h3>', unsafe_allow_html=True)
     with st.spinner("please hold on while processing your image..."):
         grey_image = convert_grey(img) # transforming into grey image.
     st.image(grey_image, caption="Grey Image")

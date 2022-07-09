@@ -6,7 +6,7 @@ import utils
 
 def hsv_run(img, manl, drop):
     # img = cv.cvtColor(img, cv.COLOR_RGB2BGR)
-    st.markdown('<h2 style="text-align: center; color: red;">Color Detection</h2>', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align: center; color: red;">Color Detection</h3>', unsafe_allow_html=True)
     # img is defined.
     # creating color range dictionary
     # https://stackoverflow.com/questions/36817133/identifying-the-range-of-a-color-in-hsv-using-opencv

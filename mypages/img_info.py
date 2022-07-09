@@ -16,14 +16,9 @@ def img_informaton(img):
 
 
 def run_img_info(img):
-    # # validating if load is checked
-    # if load: 
-    #     img = utils.get_keep_image()
-    # else:
-    #     img = img
     
     # main page starting.
-    st.markdown('<div style="text-align: center; color: red;">Uploaded Image Information.</div>', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align: center; color: red;">Uploaded Image Information.</h3>', unsafe_allow_html=True)
     # getting image information, shape, size
     shape, size = img_informaton(img)
     st.write("Image Information:")

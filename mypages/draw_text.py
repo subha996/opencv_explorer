@@ -11,7 +11,7 @@ import st_code as code
 # https://opencv-tutorial.readthedocs.io/en/latest/draw/draw.html#using-numpy
 def run_draw_text(img):
     # getting coordinates of the image
-    st.markdown('<div style="text-align: center; color: red;">Draw and Text</div>', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align: center; color: red;">Draw and Text</h3>', unsafe_allow_html=True)
     xmin, ymin, xmax, ymax = 1, 1, int(img.shape[1]), int(img.shape[0])
 
     # getting options for drawing and text

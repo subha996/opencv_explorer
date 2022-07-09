@@ -54,7 +54,7 @@ def run_resize_img(img):
     # else:
     #     img = img
 
-    st.markdown('<h2 style="text-align: center; color: red;">Resize Image</h2>', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align: center; color: red;">Resize Image</h3>', unsafe_allow_html=True)
     st.write("Original size:-" +  "\n" + "Width: " + str(img.shape[1]) + " Height: " + str(img.shape[0]))
     col1, col2 = st.columns(2)
     wh = col1.checkbox("Resize with Width and Height", value=True, key="wh")

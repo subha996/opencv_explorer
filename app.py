@@ -10,6 +10,7 @@ from mypages.grey_img import run_grey_img
 from mypages.morph_trans_img import run_morph_trans_img
 from mypages.smoothing_img import run_smoothing_img
 from mypages.draw_text import run_draw_text
+from  mypages.thres import thresholding
 
 # setting the page icon
 st.set_page_config(page_title='Open-CV Explorer',page_icon="screensicon\opencv-icon.png" ,layout = 'centered', initial_sidebar_state = 'auto')
@@ -23,6 +24,7 @@ options = ["Show Image Information", "Grey Image",
             "Resize Image", "Draw and Text" ,"Morphological Transformations", 
             "Smoothing Images", "Color Detection(HSV)", 
             "Edge Detection", "Histogram Equalization",
+            "Thresholding"
         ]
 opt = st.sidebar.selectbox("Select options from here.", options)
 
@@ -43,6 +45,7 @@ else:
     suflw = st.sidebar.checkbox("Use Sunflower Image !!", key="sunf", value=False)
     if suflw: 
         img = cv.imread("./images/sunflower.jpg")
+        img = cv.resize(img,(700, 400))
         buffer = img.copy()
         st.sidebar.image(img, caption="Sunflower", channels="BGR")
     if buffer is None:
@@ -50,7 +53,9 @@ else:
         st.sidebar.write("Nothing to show here, No file is uploaded")
         st.warning("Please Upload a Image file to Start")
         # shwoing sample image.
-        st.image("./images/sunflower2.jpg", caption="Sunflowers face the rising Sun")
+        img  = cv.imread("./images/sunflower.jpg")
+        img = cv.resize(img,(700, 400))
+        st.image(img, caption="Sunflowers face the rising Sun", channels="BGR")
         st.write("Image information will appear here.")
 
 
@@ -82,9 +87,10 @@ if buffer is not None:
         hsv_run(img, manl=manl, drop=drop)
     
     elif opt == "Edge Detection": # for edge detecting from sidebar
+        st.markdown('<h3 style="text-align: center; color: red;">Edge Detection</h3>', unsafe_allow_html=True)
         col1, col2 = st.columns(2)
         sobel = col1.checkbox("Sobel Edge `Detection`", value = False)
-        canny = col2.checkbox("Canny Edge Detection", value = False)
+        canny = col2.checkbox("`Canny` Edge Detection", value = False)
         if sobel and canny:
             st.warning("Please Select one at a time.")
         elif not sobel and not canny:
@@ -96,6 +102,10 @@ if buffer is not None:
     
     elif opt == "Histogram Equalization": # for histogram equalization option from sidebar
         run_hist_equ(img)
+    
+    elif opt == "Thresholding":
+        thresholding(img)
+
 
 else:
     pass

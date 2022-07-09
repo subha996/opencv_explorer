@@ -514,3 +514,26 @@ cv.waitKey(0)
 cv.destroyAllWindows()
 
 """
+
+code_threshold = """
+
+# reading the the image
+img = cv.imread("./filePath")
+
+# threhlding can not work on color image, so convert it to grayscale.
+grey = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+
+# thresholding
+ret, thresh = cv.threshold(grey,
+                            thresh=127, # can be any value between 0 and 255
+                            maxval=255, # can be any value between 0 and 255
+                            type=cv.THRESH_BINARY) # other type of thresholding can be found in doc page.
+
+
+# showing the image
+cv.imshow("Threshold image", thresh)
+
+cv.waitKey(0)
+cv.destroyAllWindows()
+
+"""

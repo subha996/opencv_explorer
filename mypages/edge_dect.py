@@ -31,7 +31,6 @@ def get_image_download_link(img):
 def edgedetection_run(img, option):
     # img = cv.cvtColor(img, cv.COLOR_RGB2BGR) # converting to BGR format.
     if option == "Sobel":
-        st.markdown('<h2 style="text-align: center; color: red;">Sobel Edge Detection</h2>', unsafe_allow_html=True)
         # transforming image into blur and greyscale
         img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
         img = cv.GaussianBlur(img, (3, 3), 0 ) # 3x3 kernel filter, sigmax=0
@@ -90,7 +89,6 @@ def edgedetection_run(img, option):
             # st.markdown(get_image_download_link(edge), unsafe_allow_html=True)
     
     elif option == "Canny":
-        st.markdown('<h3 style="text-align: center; color: red;">Canny Edge Detection</h3>', unsafe_allow_html=True)
         # transforming image into blur and greyscale
         img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
         img = cv.GaussianBlur(img, (3, 3), 0 ) # 3x3 kernel filter, sigmax=0
