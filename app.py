@@ -1,5 +1,6 @@
 import cv2 as cv
 import streamlit as st
+import streamlit.components.v1 as components
 import utils 
 from mypages.img_info import run_img_info
 from mypages.hsv import hsv_run
@@ -14,7 +15,8 @@ from  mypages.thres import thresholding
 
 # setting the page icon
 st.set_page_config(page_title='Open-CV Explorer',page_icon="screensicon\opencv-icon.png" ,layout = 'centered', initial_sidebar_state = 'auto')
-
+# # sidebar heading
+# st.sidebar.markdown('<h2 style="text-align: center; color: red;">Open CV Explorer</h2>', unsafe_allow_html=True)
 # reading the image from user input.
 # st.markdown('<div style="text-align: center; color: red;">Dilation</div>', unsafe_allow_html=True)
 buffer = st.sidebar.file_uploader("Please Upload File", type=["jpg", "png"])
@@ -52,6 +54,14 @@ else:
         st.markdown('<h2 style="text-align: center; color: red;">Open CV Explorer</h2>', unsafe_allow_html=True)
         st.sidebar.write("Nothing to show here, No file is uploaded")
         st.warning("Please Upload a Image file to Start")
+
+        # putting linkdine badge
+        html_code = """<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="subhabrata-nath-181375115" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/subhabrata-nath-181375115?trk=profile-badge"></a></div>
+              
+              """
+        with st.sidebar:
+            components.html(html_code, height=325, width=310)
         # shwoing sample image.
         img  = cv.imread("./images/sunflower.jpg")
         img = cv.resize(img,(700, 400))
