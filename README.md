@@ -41,7 +41,7 @@ I have tried to include almost every parameter that can be changed and apply to 
 I have used `python` as the base programming language and `Open-CV python library` for the image transformation, `streamlit` for creating the web application.
 
 [Demo Video](https://youtu.be/6Oxofczo3tA)
-[Web Link 1](http://opencvexplorer.herokuapp.com/)
+<!-- [Web Link 1](http://opencvexplorer.herokuapp.com/) -->
 [Web Link 2](https://subha996-opencv-explorer-app-d2vtt3.streamlitapp.com/)
 
 
