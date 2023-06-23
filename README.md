@@ -10,7 +10,7 @@ For those new to image processing and learning OpenCV, our application is a valu
 
 While OpenCV offers numerous methods for image processing and transformations, we have included a selection of commonly used ones. This curated collection aims to help beginners grasp the concept of parameter adjustments quickly and enjoy learning OpenCV in a more engaging and efficient manner.
 
-### Our application provides several benefits to assist you in your image-processing journey:
+### This application provides several benefits to assist you in your image-processing journey:
 
 1. Centralized Exploration: By consolidating commonly used code and its applications in one place, our application allows you to explore and reference relevant information conveniently.
 
@@ -20,7 +20,7 @@ While OpenCV offers numerous methods for image processing and transformations, w
 
 4. Enhanced Learning Experience: By providing an engaging and exploratory platform, our application aims to make the learning process more enjoyable. You can actively interact with different parameters and witness their effects, fostering a dynamic learning environment.
 
-Overall, our application streamlines the exploration of commonly used code, facilitates comprehension of parameter changes, enables real-time observations without IDE usage, and enhances the overall learning experience by making it more fun and exploratory.
+Overall, this application streamlines the exploration of commonly used code, facilitates comprehension of parameter changes, enables real-time observations without IDE usage, and enhances the overall learning experience by making it more fun and exploratory.
 
 
 <h4 align="center"> Use of Application is really simple </h4>
@@ -38,7 +38,7 @@ Overall, our application streamlines the exploration of commonly used code, faci
 * Edge Detection
 * Histogram Equalization
 
-Our application offers a comprehensive range of parameters that can be modified and applied to the image in real-time. Feel free to explore each parameter and observe its immediate effect on the image. By experimenting with various parameter settings, you can gain a deeper understanding of their impact on image processing outcomes. Take full advantage of the application's capabilities and enjoy the hands-on experience of exploring and observing parameter changes in real-time.
+This application offers a comprehensive range of parameters that can be modified and applied to the image in real time. Feel free to explore each parameter and observe its immediate effect on the image. By experimenting with various parameter settings, you can gain a deeper understanding of their impact on image processing outcomes. Take full advantage of the application's capabilities and enjoy the hands-on experience of exploring and observing parameter changes in real time.
 
 
 ### Some Screenshots 
