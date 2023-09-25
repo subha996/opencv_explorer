@@ -1,6 +1,5 @@
-<p align="center">
-<img src="https://forthebadge.com/images/badges/made-with-python.svg" >
-</p>
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://opencvexplorer.streamlit.app/)
 
 <h2 align="center"> Open CV Explorer </h2>
 
